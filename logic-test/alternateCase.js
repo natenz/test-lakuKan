@@ -1,3 +1,5 @@
+// Soal 3 Alternate Case 
+
 const alternateCase = (letters) => {
     var newLetters = "";
     for (let i=0; i<letters.length; i++){

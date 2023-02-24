@@ -1,12 +1,14 @@
-var num1 = 3;
-var num2 = 5;
-var result;
-function multiple(num){
-    if(num1 > num || num2 > num){
-        return result;
-    }else {
-       
+// Soal 4 | Multiple 3 and 5 
+const solution = (num) => {
+    let result = 0;
+    let details = [];
+    for(let i=1; i<num; i++){
+        if(i%3 == 0 || i%5 == 0){
+            result += i;
+            details.push(i);
+        }
     }
-    
+return { result, details };
 }
-console.log(multiple(10));
+let ans = solution(10);
+console.log(`${ans.result} = ${ans.details.join(' + ')}`)
